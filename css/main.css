@@ -221,42 +221,49 @@ header > nav img {
 
 /* EMPLOYEES*/
 .employees {
-  position: relative; }
+  padding: 0 50px;
+  margin-bottom: 75px; }
   .employees [class*="col-"] {
-    position: relative; }
-  .employees .image-emp {
-    float: left;
-    display: block; }
-    .employees .image-emp:hover {
-      cursor: pointer;
-      opacity: 0.8;
-      transition: .5s ease;
-      display: block;
-      background: rgba(0, 0, 0, 0.4); }
-  .employees .layer-emp {
-    display: none;
-    position: absolute;
+    position: relative;
+    min-height: 300px;
+    min-width: 300px; }
+  .employees img {
+    border: none;
     border-radius: 50%;
+    height: 100%;
+    width: 100%; }
+  .employees .overlay-emp {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin: 0 auto; }
+  .employees .layer-emp {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    color: #FFF;
+    transition: background .3s;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: rgba(0, 0, 0, 0.4)*/
-    color: white;
-    text-align: center; }
-  .employees [class*="col-"]:hover .layer-emp {
-    display: block; }
-  .employees .image-emp {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; }
+    border: none;
+    border-radius: 50%; }
+    .employees .layer-emp:hover {
+      background: rgba(0, 0, 0, 0.6); }
+    .employees .layer-emp p {
+      position: relative;
+      top: 50%;
+      opacity: 0;
+      transition: opacity .3s;
+      color: #FFF;
+      font-size: 16px;
+      margin: 0;
+      height: 100%; }
+      .employees .layer-emp p:hover {
+        opacity: 1; }
   .employees h4 {
     text-align: center; }
-  .employees h5 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 20px; }
 
 /*TITLE PICTURES */
 .title {
@@ -382,9 +389,6 @@ header > nav img {
   /* Gallery*/
   .gallery .images {
     text-align: center; }
-  /* EMPLOYEES*/
-  .employees [class*="col-"]:hover .layer-emp, .employees .empl-names {
-    display: none; }
   /*TITLE PICTURE*/
   .title {
     background: #7f8c8d;
@@ -436,21 +440,6 @@ header > nav img {
     width: 100%; }
   .icons p {
     font-size: 18px; }
-  /* EMPLOYEES*/
-  .employees [class*="col-"]:hover .layer-emp {
-    display: none; }
-  .title {
-    background: #7f8c8d;
-    text-align: center;
-    margin: 0 auto;
-    height: 100%; }
-    .title .picture-title {
-      display: none; }
-    .title h1 {
-      margin: 0 auto;
-      margin-top: 50px; }
-    .title p {
-      margin: 0 auto; }
   /*FOOTER*/
   .footer .contener {
     margin: 0 auto; }
